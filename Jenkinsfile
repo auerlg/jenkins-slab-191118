@@ -18,5 +18,11 @@ pipeline {
 
             }
         }
+        stage('Stage3 apache check') {
+            steps {
+                sh '''
+                    curl 192.168.56.211:80
+                    ''' 
+
     }
 }
