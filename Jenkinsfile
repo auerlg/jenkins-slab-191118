@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Stage1 sanitiy check:') {
             steps {
-                sh 'curl -v google.com'
+                sh 'ping -c 5 google.com'
 
             }
         }
